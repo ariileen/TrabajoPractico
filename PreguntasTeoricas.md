@@ -116,10 +116,6 @@ Server push: HTTP/2 permite que el servidor envíe contenido al cliente antes de
 Una conexión persistente es aquella la cual permanece abierta por un periodo, y puede ser reutilizada por varias peticiones de datos, ahorrando así la necesidad de efectuar nuevas sincronizaciones a nivel de TCP, de esta manera se puede usar más eficazmente el protocolo TCP. Esta conexión no estará abierta permanentemente, si la conexión no se usa, se cerrará después de un tiempo determinado (un servidor puede usar la cabecera Keep-Alive para definir el tiempo mínimo que la conexión debería estar abierta).
 Keep-Alive Controla el tiempo durante el cual una conexión persistente debe permanecer abierta. Es un concepto que permite que una sola conexión TCP se envíe y reciba múltiples solicitudes HTTP/respuestas, en lugar de abrir una nueva conexión para cada par de solicitud/respuesta.
 
-
-
-
-
 Preguntas de implementación práctica:
 ¿Cómo manejarías la autenticación en una API basada en HTTP/HTTPS? ¿Qué métodos
 conoces (Basic, OAuth, JWT, etc.)?
@@ -163,10 +159,6 @@ Desarrollo de API
 Colaboración en equipo
 Prueba de escenarios complejos
 
-
-
-
-
 Preguntas de GIT
 ¿Qué es GIT y para qué se utiliza en desarrollo de software?
 Es un sistema de control de versiones. Esta herramienta nos permite tener el historial completo de todo el código que hemos desarrollado y registra los cambios de un proyecto.
@@ -209,7 +201,6 @@ Son aquellas que no bloquean la ejecución de otras operaciones . En las operaci
 El modelo de I/O no bloqueante y controlado por eventos permite manejar una gran cantidad de conexiones simultáneas con un alto rendimiento de manera eficiente. 
 
 
-
 ¿Qué es el Event Loop en Node.js y cuál es su papel en la ejecución de código asincrónico?
 Event loop es un bucle interno de JavaScript que se encarga de manejar la cola de tareas pendientes y ejecutarlas de manera secuencial. Estas tareas pueden ser funciones, eventos o cualquier otro tipo de acción que necesite ser ejecutada.
 Su papel en la ejecución de código asincrónico permite ejecutar tareas simultáneamente sin esperar a que se completen las demás . Esto permite que el bucle de eventos de Node.js administre de manera eficiente múltiples operaciones simultáneamente, lo que da como resultado un mejor rendimiento y escalabilidad.
@@ -235,9 +226,6 @@ La principal diferencia, es que las dependencias en desarrollo no son necesarias
 Nest. js es un framework de desarrollo web basado en Node. js que utiliza TypeScript para proporcionar una estructura de programación sólida y altamente escalable. 
 
 
-
-
-
 ¿Cómo se manejan errores en Node.js y cuál es la diferencia entre callbacks, promesas y
 async/await para manejar código asincrónico?
 Para manejar los errores se pueden usar varias prácticas:
@@ -252,55 +240,5 @@ Cada solución es mejor que la otra, lo cual hace al código más óptimo y más
 Preguntas/Ejercicios:
 
 1. Adjuntar imágenes del response de un GET y de un POST de cada punto
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 2. ¿Qué sucede cuando hacemos el GET por segunda vez, luego de haber ejecutado el POST?
 Lo que sucede es que al hacer get por segunda vez luego del post creamos un nuevo registro y se guardó y podemos utilizarlo para consultarlo nuevamente.
